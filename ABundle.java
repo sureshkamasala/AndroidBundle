@@ -1,3 +1,4 @@
+package com.ons.abundle;
 
 public class ABundle {
     Cache mCache;
@@ -29,6 +30,11 @@ public class ABundle {
     public void remove(String key) {
 
         mCache.remove(key);
+    }
+    
+    public <V> V get(String key, Class<V> clazz) {
+        
+        return mCache.get(key, clazz);
     }
     
     public Object get(String key) {
