@@ -4,7 +4,8 @@ public class ABundle {
     Cache mCache;
 
     private static ABundle INSTANCE;
-
+    public static String KEY ="abundle_key";
+    
     private ABundle() {
         mCache = new Cache();
     }
